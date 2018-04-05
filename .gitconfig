@@ -1,0 +1,11 @@
+[user]
+	email = tobias.manske@mailbox.org
+	name = Tobias Manske
+	signingkey = 978D99F12D4E041F
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    cu = "!git branch --merged | grep -v '\\*' | grep -v master | xargs -n 1 git branch -d"
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input

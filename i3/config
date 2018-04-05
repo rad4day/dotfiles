@@ -20,11 +20,15 @@
 
     # Define names for default workspaces for which we configure key bindings later on.
     # We use variables to avoid repeating the names in multiple places.
-    set $ws1 "1"
-    set $ws2 "2"
-    set $ws3 "3"
+    # Browser
+    set $ws1 "1 "
+    # Terminal
+    set $ws2 "2 "
+    # Work
+    set $ws3 "3 "
     set $ws4 "4"
-    set $ws5 "5"
+    # Mail
+    set $ws5 "5 "
     set $ws6 "6"
     set $ws7 "7"
     set $ws8 "8"
@@ -132,6 +136,9 @@ floating_modifier $mod
     # UNBIND F1
     bindsym F1 exec --no-startup-id echo > /dev/null
 
+    # Urgent window
+    bindsym $mod+x [urgent=latest] focus
+
 
     # MEDIA KEYS
     bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
@@ -141,6 +148,13 @@ floating_modifier $mod
     bindsym XF86AudioNext        exec --no-startup-id playerctl next
     bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
     bindsym XF86AudioStop        exec --no-startup-id playerctl stop
+
+    # Screensaver || ThinkVantage
+    bindsym XF86ScreenSaver exec xscreensaver-command -lock
+    bindsym XF86Launch1     exec "xscreensaver-command -lock; sleep 1; xset dpms force off"
+
+    # Screenshot
+    bindsym Print exec ~/.config/i3/scripts/screenshot.sh
 
 
     # {{{ RESIZE MODE }}}
@@ -198,6 +212,26 @@ bar {
 # {{{ NO BORDERS }}}
     default_border none
     default_floating_border normal
+
+
+# {{{ WORKSPACES }}}
+
+    # Browser
+        workspace $ws1 gaps outer 0
+        workspace $ws1 gaps inner 0
+        assign [class="Firefox"] $ws1
+
+    # Terminal
+        assign [class="URxvt"]   $ws2
+
+    # Mail
+        workspace $ws5 gaps outer 0
+        workspace $ws5 gaps inner 0
+        assign [class="Thunderbird"] $ws5
+    # KeepassXC
+        assign [class="keepassxc"] $ws10
+
+
 
 # {{{ KEYBOARD MAP }}}
     exec_always setxkbmap de

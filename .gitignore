@@ -1,0 +1,21 @@
+# Created by https://www.gitignore.io/api/vim
+
+### Vim ###
+# swap
+vim/[._]*.s[a-v][a-z]
+vim/[._]*.sw[a-p]
+vim/[._]s[a-v][a-z]
+vim/[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+vim/.undo/*
+vim/.swp/*
+
+.sqlite
+# End of https://www.gitignore.io/api/vim
