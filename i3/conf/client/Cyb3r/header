@@ -1,0 +1,29 @@
+set $CLIENT_BUMBLEBEE -m mpd load memory disk nic caffeine amixer datetime -p nic.states=^down -t greyish-powerline
+
+# {{{ VARIABLES  }}}
+
+    set $mod Mod4
+    set $TERMINAL urxvt
+
+    # gaps
+    set $gap_outer 25
+    set $gap_inner 15
+
+    set $ws1 "1 "
+    # Terminal
+    set $ws2 "2 "
+    # Work
+    set $ws3 "3 "
+    # Chat
+    set $ws4 "4 "
+    # Mail
+    set $ws5 "5 "
+    set $ws6 "6"
+    set $ws7 "7"
+    set $ws8 "8"
+    set $ws9 "9"
+    set $ws10 "10"
+
+# {{{ SPECIAL KEYBINDINGS }}}
+
+bindsym $mod+m move workspace to output right

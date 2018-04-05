@@ -1,0 +1,5 @@
+# {{{ KEYBOARD MAP }}}
+    exec_always setxkbmap de
+
+# {{{ AUTOSTART  }}}
+exec ~/.config/autorun.sh

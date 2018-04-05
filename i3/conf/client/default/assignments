@@ -1,0 +1,16 @@
+# {{{ WORKSPACES }}}
+
+    # Browser
+        workspace $ws1 gaps outer 0
+        workspace $ws1 gaps inner 0
+        assign [class="Firefox"] $ws1
+
+    # Terminal
+        assign [class="URxvt"]   $ws2
+
+    # Mail
+        workspace $ws5 gaps outer 0
+        workspace $ws5 gaps inner 0
+        assign [class="Thunderbird"] $ws5
+    # KeepassXC
+        assign [class="keepassxc"] $ws10

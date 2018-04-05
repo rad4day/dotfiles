@@ -10,32 +10,6 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 
-# {{{ VARIABLES  }}}
-
-    set $mod Mod4
-    set $TERMINAL urxvt
-
-    # gaps
-    set $gap_outer 25
-    set $gap_inner 15
-
-    # Define names for default workspaces for which we configure key bindings later on.
-    # We use variables to avoid repeating the names in multiple places.
-    # Browser
-    set $ws1 "1 "
-    # Terminal
-    set $ws2 "2 "
-    # Work
-    set $ws3 "3 "
-    set $ws4 "4"
-    # Mail
-    set $ws5 "5 "
-    set $ws6 "6"
-    set $ws7 "7"
-    set $ws8 "8"
-    set $ws9 "9"
-    set $ws10 "10"
-
 # {{{ FONT  }}}
 font pango:Hack 8
 
@@ -145,10 +119,10 @@ floating_modifier $mod
     bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
     bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%-
     bindsym XF86AudioMute        exec --no-startup-id amixer set Master toggle
-    bindsym XF86AudioPlay        exec --no-startup-id playerctl play-pause
-    bindsym XF86AudioNext        exec --no-startup-id playerctl next
-    bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
-    bindsym XF86AudioStop        exec --no-startup-id playerctl stop
+    bindsym XF86AudioPlay        exec --no-startup-id mpc toggle
+    bindsym XF86AudioNext        exec --no-startup-id mpc next
+    bindsym XF86AudioPrev        exec --no-startup-id mpc prev
+    bindsym XF86AudioStop        exec --no-startup-id mpc stop
 
     # Screensaver || ThinkVantage
     bindsym XF86ScreenSaver exec xscreensaver-command -lock
@@ -215,28 +189,3 @@ bar {
     default_border none
     default_floating_border normal
 
-
-# {{{ WORKSPACES }}}
-
-    # Browser
-        workspace $ws1 gaps outer 0
-        workspace $ws1 gaps inner 0
-        assign [class="Firefox"] $ws1
-
-    # Terminal
-        assign [class="URxvt"]   $ws2
-
-    # Mail
-        workspace $ws5 gaps outer 0
-        workspace $ws5 gaps inner 0
-        assign [class="Thunderbird"] $ws5
-    # KeepassXC
-        assign [class="keepassxc"] $ws10
-
-
-
-# {{{ KEYBOARD MAP }}}
-    exec_always setxkbmap de
-
-# {{{ AUTOSTART  }}}
-exec ~/.config/autorun.sh
