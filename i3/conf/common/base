@@ -9,6 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+
 # {{{ VARIABLES  }}}
 
     set $mod Mod4
@@ -203,7 +204,7 @@ floating_modifier $mod
 bar {
     position       top
 
-    status_command bumblebee-status -m disk nic sensors battery caffeine amixer brightness datetime -p battery.device=BAT0,BAT1 brightness.device_path=/sys/class/backlight/acpi_video0 disk.format={left} nic.states=^down sensors.path=/sys/class/thermal/thermal_zone2/temp  -t greyish-powerline
+    status_command bumblebee-status $CLIENT_BUMBLEBEE
 }
 
 # {{{ GAPS }}}
@@ -238,4 +239,4 @@ bar {
     exec_always setxkbmap de
 
 # {{{ AUTOSTART  }}}
-exec ~/.config/i3/scripts/autorun.sh
+exec ~/.config/autorun.sh
