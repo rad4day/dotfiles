@@ -14,9 +14,11 @@ vim:
 	mkdir ~/.dotfiles/vim/.backup
 
 git:
+	rm ~/.gitconfig
 	ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 xresources:
+	rm ~/.Xresources
 	ln -s ~/.dotfiles/.Xresources ~/.Xresources
 
 zsh:
