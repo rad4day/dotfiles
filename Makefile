@@ -16,6 +16,9 @@ vim:
 git:
 	ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
+xresources:
+	ln -s ~/.dotfiles/.Xresources ~/.Xresources
+
 zsh:
 	ln -s ~/.dotfiles/zsh ~/.zim
 	zsh zimsetup.zsh
@@ -37,4 +40,4 @@ dep:
 	cd /tmp/bumblebee && makepkg -Acs && sudo pacman -U *.pkg.*
 	sudo pacman -S awesome-terminal-fonts
 
-all: clean tmux vim git zsh i3
+all: clean tmux vim git zsh i3 xresources
