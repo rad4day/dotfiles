@@ -151,6 +151,7 @@ floating_modifier $mod
 
     # Screensaver || ThinkVantage
     bindsym XF86ScreenSaver exec xscreensaver-command -lock
+    bindsym XF86Battery	exec xscreensaver-command -lock
     bindsym XF86Launch1     exec "xscreensaver-command -lock; sleep 1; xset dpms force off"
 
     # Screenshot
