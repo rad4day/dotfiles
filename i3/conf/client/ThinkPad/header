@@ -1,1 +1,25 @@
 set $CLIENT_BUMBLEBEE -m disk nic sensors battery caffeine amixer brightness datetime -p battery.device=BAT0,BAT1 brightness.device_path=/sys/class/backlight/acpi_video0 disk.format={left} nic.states=^down sensors.path=/sys/class/thermal/thermal_zone2/temp  -t greyish-powerline
+
+
+# {{{ VARIABLES  }}}
+
+    set $mod Mod4
+    set $TERMINAL urxvt
+
+    # gaps
+    set $gap_outer 25
+    set $gap_inner 15
+
+    set $ws1 "1 "
+    # Terminal
+    set $ws2 "2 "
+    # Work
+    set $ws3 "3 "
+    set $ws4 "4"
+    # Mail
+    set $ws5 "5 "
+    set $ws6 "6"
+    set $ws7 "7"
+    set $ws8 "8"
+    set $ws9 "9"
+    set $ws10 "10"
