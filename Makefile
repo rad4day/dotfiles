@@ -9,12 +9,12 @@ vim:
 	sudo pip3 install neovim
 	#sudo pip2 uninstall greenlet
 	sudo pacman -S python-greenlet
-	mkdir ~/.dotfiles/vim/.swp
-	mkdir ~/.dotfiles/vim/.undo
-	mkdir ~/.dotfiles/vim/.backup
+	mkdir -p ~/.dotfiles/vim/.swp
+	mkdir -p ~/.dotfiles/vim/.undo
+	mkdir -p ~/.dotfiles/vim/.backup
 
 git:
-	rm ~/.gitconfig
+	rm ~/.gitconfig || echo
 	ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 xresources:
