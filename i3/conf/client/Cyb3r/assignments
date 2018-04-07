@@ -6,7 +6,7 @@
         assign [class="Firefox"] $ws1
 
     # Terminal
-        assign [class="URxvt"]   $ws2
+        assign [class="URxvt" instance="urxvt"]   $ws2
 
     # CHAT
         assign [class="discord"] $ws4

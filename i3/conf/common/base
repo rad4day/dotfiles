@@ -24,6 +24,14 @@ font pango:Hack 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+
+# {{{ DROPDOWN TERMINAL }}}
+    for_window [instance="dropdown"] floating enable
+    for_window [instance="dropdown"] resize set 625 400
+    for_window [instance="dropdown"] move scratchpad
+    for_window [instance="dropdown"] border pixel 2
+    exec --no-startup-id $TERMINAL -name dropdown
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -108,8 +116,8 @@ floating_modifier $mod
     # exit i3 (logs you out of your X session)
     bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-    # UNBIND F1
-    bindsym F1 exec --no-startup-id echo > /dev/null
+    # BIND DROPDOWN TERMINAL TO F1
+    bindsym F1 [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
     # Urgent window
     bindsym $mod+x [urgent=latest] focus
