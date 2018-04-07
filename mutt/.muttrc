@@ -40,7 +40,7 @@ bind index o sidebar-open
 color index yellow default '.*'
 color index_author red default '.*'
 color index_number blue default
-color index_subject cyan default '.s'
+# color index_subject cyan default '.s'
 color index_size green default
 color normal default default
 color body brightred default [\-\.+_a-zA-Z0-9]+
