@@ -27,6 +27,9 @@ zsh:
 	rm ~/.zimrc
 	ln -s ~/.dotfiles/zsh/.zimrc ~/.zimrc
 
+compton:
+	ln -s ~/.dotfiles/.compton.conf ~/.compton.conf
+
 i3: dep
 	ln -s ~/.dotfiles/i3 ~/.config/i3
 	cd i3/conf/ && ./build.sh
@@ -43,9 +46,9 @@ clean:
 
 dep:
 	git clone https://aur.archlinux.org/powerline-fonts-git.git /tmp/powerline-font
-	cd /tmp/powerline-font && makepkg -Acs && sudo pacman -U *.pkg.*
+	cd /tmp/powerline-font && makepkg -Acsi
 	git clone https://aur.archlinux.org/bumblebee-status-git.git /tmp/bumblebee
-	cd /tmp/bumblebee && makepkg -Acs && sudo pacman -U *.pkg.*
+	cd /tmp/bumblebee && makepkg -Acsi
 	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m
 
-all: clean tmux vim git zsh i3 mutt xresources
+all: clean tmux vim git zsh i3 mutt xresources compton

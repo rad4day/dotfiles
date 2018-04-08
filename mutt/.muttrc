@@ -9,7 +9,7 @@ set header_cache = ~/.cache/mutt
 unset imap_passive
 set imap_keepalive = 300
 set mail_check = 20
-
+set editor = vim
 
 set record = +Sent
 
