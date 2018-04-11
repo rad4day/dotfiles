@@ -14,8 +14,10 @@
         exec_always 'i3-msg "workspace number 4; append_layout ~/.layout/ws-4.json"'
 
     # Mail
-        workspace $ws5 gaps outer 0
-        workspace $ws5 gaps inner 0
         assign [instance="mail"] $ws5
     # KeepassXC
         assign [class="keepassxc"] $ws10
+
+    # Morrowind
+        for_window [instance="morrowind.exe"] fullscreen enable
+        assign [instance="morrowind.exe"] $ws1

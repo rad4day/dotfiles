@@ -85,14 +85,16 @@ let g:SimpylFold_docstring_preview = 1
 let g:SuperTabDefaultCompletionType = "<c-space>"
 
 " Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map={"mode":"active", "active_filetypes": [], "passive_filetypes": ['tex']}
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501,E225'
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_mode_map={"mode":"active", "active_filetypes": [], "passive_filetypes": ['tex']}
+" let g:syntastic_python_checkers=['flake8']
+" let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
+" Ale
+let g:ale_linters = {"python": ["flake8"]}
 
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger="<c-b>"

@@ -10,9 +10,6 @@
 [submodule "vim/plugins/supertab"]
 	path = vim/plugins/supertab
 	url = https://github.com/ervandew/supertab
-[submodule "vim/plugins/syntastic"]
-	path = vim/plugins/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "vim/plugins/vim-airline"]
 	path = vim/plugins/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
@@ -136,3 +133,12 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "vim/plugins/python-mode"]
+	path = vim/plugins/python-mode
+	url = https://github.com/klen/python-mode.git
+[submodule "vim/plugins/ale"]
+	path = vim/plugins/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim/plugins/pydoc"]
+	path = vim/plugins/pydoc
+	url = https://github.com/fs111/pydoc.vim
