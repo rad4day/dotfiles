@@ -84,7 +84,8 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Whitespace
-autocmd BufEnter *[^(.rmd)] EnableStripWhitespaceOnSave
+autocmd BufEnter *[^(.rmd|.snippets)] EnableStripWhitespaceOnSave
+autocmd BufEnter *.snippets DisableStripWhitespaceOnSave
 
 " Yankstack
 let g:yankstack_map_keys = 0
