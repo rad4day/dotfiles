@@ -46,8 +46,17 @@ endfunction
 
 
 autocmd WinEnter * call ForceResizeNetrw()
-" autocmd VimEnter * Vex
 autocmd BufNew * call ForceResizeNetrw()
+
+" R Markdown
+autocmd BufNewFile,BufReadPost *.Rmd call Rmarkdown()
+autocmd BufNewFile,BufReadPost *.rmd call Rmarkdown()
+
+function Rmarkdown()
+    set filetype=markdown
+    let g:markdown_syntax_conceal = 0
+    let g:markdown_fenced_languages =  ['r', 'python', 'html', 'sql', 'bash=sh']
+endfunction
 
 " Transparency
 hi Normal guibg=NONE ctermbg=NONE
