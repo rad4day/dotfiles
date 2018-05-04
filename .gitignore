@@ -137,5 +137,5 @@ tags
 # End of https://www.gitignore.io/api/vim,python
 
 i3/config
-.sqlite
+*.sqlite
 i3/scripts/dmenu/database.sqlite
