@@ -38,3 +38,6 @@ nmap <F9> :SCCompile<cr>
 nmap <F10> :SCCompileRun<cr>
 
 nmap <C-c> g~iw
+
+" Rmarkdown
+autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
