@@ -40,4 +40,5 @@ nmap <F10> :SCCompileRun<cr>
 nmap <C-c> g~iw
 
 " Rmarkdown
-autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+autocmd Filetype rmd nmap <F5> :w\|:!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+autocmd Filetype rmd imap <F5> <ESC><ESC>:w\|:!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>

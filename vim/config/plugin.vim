@@ -67,14 +67,6 @@ let g:NERDDefaultAlign = "left"
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
-" NerdTree
-" let g:NERDTreeShowHidden = 1
-" " let NERDTreeMinimalUI = 1
-" let NERDTreeCascadeSingleChildDir = 1
-" let NERDTreeCascadeOpenSingleChildDir = 1
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" let g:nerdtree_tabs_open_on_console_startup = 1
-
 " PythonSyntax
 let python_highlight_all = 1
 
@@ -84,15 +76,6 @@ let g:SimpylFold_docstring_preview = 1
 " Supertab
 let g:SuperTabDefaultCompletionType = "<c-space>"
 
-" Syntastic
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_mode_map={"mode":"active", "active_filetypes": [], "passive_filetypes": ['tex']}
-" let g:syntastic_python_checkers=['flake8']
-" let g:syntastic_python_flake8_args='--ignore=E501,E225'
-
 " Ale
 let g:ale_linters = {"python": ["flake8"]}
 
@@ -101,7 +84,7 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Whitespace
-autocmd BufEnter * EnableStripWhitespaceOnSave
+autocmd BufEnter *[^(.rmd)] EnableStripWhitespaceOnSave
 
 " Yankstack
 let g:yankstack_map_keys = 0
