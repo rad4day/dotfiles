@@ -1,25 +1,59 @@
-snippet .R
+snippet R
 	\mathbb{R}
-snippet .N
+snippet N
 	\mathbb{N}
-snippet .Z
+snippet Z
 	\mathbb{Z}
-snippet .F
+snippet F
 	\mathbb{F}
-snippet ..R
+snippet Q
+	\mathbb{Q}
+snippet C
+	\mathbb{C}
+snippet .R
 	$\mathbb{R}$
-snippet ..N
+snippet .Q
+	$\mathbb{Q}$
+snippet .C
+	$\mathbb{C}$
+snippet .N
 	$\mathbb{N}$
-snippet ..Z
+snippet .Z
 	$\mathbb{Z}$
-snippet ..F
+snippet .F
 	$\mathbb{F}$
-snippet pi
-	\pi
+snippet eps
+	\varepsilon 
+snippet to
+	\to
+snippet toi
+	( ${1} \to\infty)
+snippet q
+	\quad 
+snippet liminf
+	\lim\limits_{${1:n} \to \infty}
+snippet lim0
+	\lim\limits_{${1:n} \to 0} ${2}
+snippet <=>
+	\Leftrightarrow 
+snippet o=
+	\overset{${1}}{=}
 snippet qfa
 	\quad (\forall ${1} \in \mathbb{${2}})
+snippet qin
+	\quad (${1} \in \mathbb{${2}})
+snippet in
+	\in 
+snippet ex
+	\exists 
+snippet for
+	\forall 
 snippet func
 	$${1}: \mathbb{${2}} \rightarrow \mathbb{${3}}$
+snippet (a
+	(a_{${1}}^{(${2})})
+snippet $(a
+	$(a_{${1}}^{(${2})})$
 snippet .<
 	\langle ${1} \rangle
 snippet ..<
@@ -39,6 +73,10 @@ snippet proof
 	\begin{proof}
 		${1}
 	\end{proof}
+snippet def
+	\begin{definition}
+		${1}
+	\end{definition}
 
 snippet align
 	\begin{align*}
@@ -52,6 +90,11 @@ snippet itemi
 
 snippet enum
 	\begin{enumerate}
+		\item ${1}
+	\end{enumerate}
+
+snippet enumabc
+	\begin{enumerate}[label=(\alph*)]
 		\item ${1}
 	\end{enumerate}
 
