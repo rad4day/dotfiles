@@ -25,7 +25,7 @@ snippet .F
 snippet eps
 	\varepsilon 
 snippet to
-	\to
+	\to 
 snippet toi
 	( ${1} \to\infty)
 snippet q
@@ -36,8 +36,12 @@ snippet lim0
 	\lim\limits_{${1:n} \to 0} ${2}
 snippet <=>
 	\Leftrightarrow 
+snippet =>
+	\Rightarrow 
 snippet o=
 	\overset{${1}}{=}
+snippet sqrt
+	\sqrt[${1:2}]{${2}}
 snippet qfa
 	\quad (\forall ${1} \in \mathbb{${2}})
 snippet qin
@@ -54,9 +58,9 @@ snippet (a
 	(a_{${1}}^{(${2})})
 snippet $(a
 	$(a_{${1}}^{(${2})})$
-snippet .<
+snippet <
 	\langle ${1} \rangle
-snippet ..<
+snippet .<
 	$\langle ${1} \rangle$
 snippet frac
 	\frac{${1}}{${2}}
@@ -77,6 +81,20 @@ snippet def
 	\begin{definition}
 		${1}
 	\end{definition}
+snippet rem
+	\begin{rem}
+		${1}
+	\end{rem}
+
+snippet bsp
+	\begin{bsp}
+		${1}
+	\end{bsp}
+
+snippet satz
+	\begin{satz}
+		${1}
+	\end{satz}
 
 snippet align
 	\begin{align*}
@@ -103,3 +121,12 @@ snippet cases
 		${1}, falls ${2}\\\\
 		${3}, sonst
 	\end{cases}
+snippet matrix
+	\`\`\`{python, echo=FALSE, results="asis"}
+	#!/usr/bin/env python3
+	# -*- coding: utf-8 -*-
+	D = [${1:[1,2,3],[4,5,6],[7,8,9]}]
+	print("\\\\left(\\\\begin{array}{" + 'c'*len(D[0]) + "}")
+	for r in D: print(' & '.join(str(x) for x in r) + "\\\\\\\\")
+	print("\\\\end{array}\\\\right)")
+	\`\`\`
