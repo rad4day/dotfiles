@@ -48,3 +48,4 @@
 <Multi_key> <g> <Z>            : "Ζ"   U0396    # GREEK CAPITAL LETTER ZETA
 <Multi_key> <g> <z>            : "ζ"   U03B6    # GREEK SMALL LETTER ZETA
 <Multi_key> <i> <n>            : "∈"   U2208    # ELEMENT OF
+<Multi_key> <f> <a>            : "∀"   U2200    # FOR ALL
