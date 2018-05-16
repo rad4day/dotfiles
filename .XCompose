@@ -47,3 +47,4 @@
 <Multi_key> <g> <y>            : "ψ"   U03C8    # GREEK SMALL LETTER PSI
 <Multi_key> <g> <Z>            : "Ζ"   U0396    # GREEK CAPITAL LETTER ZETA
 <Multi_key> <g> <z>            : "ζ"   U03B6    # GREEK SMALL LETTER ZETA
+<Multi_key> <i> <n>            : "∈"   U2208    # ELEMENT OF
