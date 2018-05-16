@@ -20,6 +20,10 @@ git:
 xresources:
 	rm ~/.Xresources
 	ln -s ~/.dotfiles/.Xresources ~/.Xresources
+xcompose:
+	rm ~/.Xcompose || true
+	ln -s ~/.dotfiles/.Xcompose ~/.Xcompose
+
 
 zsh:
 	ln -s ~/.dotfiles/zsh ~/.zim
