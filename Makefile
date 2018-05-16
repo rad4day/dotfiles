@@ -21,8 +21,8 @@ xresources:
 	rm ~/.Xresources
 	ln -s ~/.dotfiles/.Xresources ~/.Xresources
 xcompose:
-	rm ~/.Xcompose || true
-	ln -s ~/.dotfiles/.Xcompose ~/.Xcompose
+	rm ~/.XCompose || true
+	ln -s ~/.dotfiles/.XCompose ~/.XCompose
 
 
 zsh:
