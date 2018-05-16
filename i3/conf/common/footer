@@ -1,5 +1,5 @@
 # {{{ KEYBOARD MAP }}}
-    exec_always setxkbmap de
+    exec_always setxkbmap de -option 'compose:ralt,lv3:caps_switch'
 
 # {{{ AUTOSTART  }}}
 exec ~/.config/autorun.sh
