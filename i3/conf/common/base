@@ -133,9 +133,9 @@ floating_modifier $mod
     bindsym XF86AudioStop        exec --no-startup-id mpc stop
 
     # Screensaver || ThinkVantage
-    bindsym XF86ScreenSaver exec xscreensaver-command -lock
-    bindsym XF86Battery	exec xscreensaver-command -lock
-    bindsym XF86Launch1     exec "xscreensaver-command -lock; sleep 1; xset dpms force off"
+    bindsym XF86ScreenSaver exec xautolock -locknow
+    bindsym XF86Battery	exec xautolock -locknow
+    bindsym XF86Launch1     exec "xautolock -locknow; sleep 1; xset dpms force off"
 
     # Screenshot
     bindsym Print exec ~/.config/i3/scripts/screenshot.sh
