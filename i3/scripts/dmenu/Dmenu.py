@@ -15,5 +15,10 @@ class Dmenu(object):
 
     def run(self):
         """Returns (exitCode, stdout)"""
-        p1 = subprocess.run(self._dmenu, input="\n".join(self._items), encoding="utf-8", stdout=subprocess.PIPE)
+        p1 = subprocess.run(
+            self._dmenu,
+            input="\n".join(self._items),
+            encoding="utf-8",
+            stdout=subprocess.PIPE,
+        )
         return (p1.returncode, p1.stdout)
