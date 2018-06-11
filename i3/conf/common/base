@@ -25,6 +25,11 @@ font pango:Hack 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 
+# {{{ USBGUARD APPLET }}}
+    for_window [class="usbguard-applet-qt"] floating enable
+    for_window [class="usbguard-applet-qt"] border normal 2
+
+
 # {{{ DROPDOWN TERMINAL }}}
     for_window [instance="dropdown"] floating enable
     for_window [instance="dropdown"] resize set 625 400
