@@ -139,3 +139,4 @@ tags
 i3/config
 *.sqlite
 i3/scripts/dmenu/database.sqlite
+albert/*.db

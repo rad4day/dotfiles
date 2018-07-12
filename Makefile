@@ -24,6 +24,8 @@ xcompose:
 	rm ~/.XCompose || true
 	ln -s ~/.dotfiles/.XCompose ~/.XCompose
 
+albert:
+	ln -s ~/.dotfiles/albert ~/.config/albert
 
 zsh:
 	ln -s ~/.dotfiles/zsh ~/.zim
@@ -43,7 +45,7 @@ mutt: dep
 	ln -s ~/.dotfiles/mutt/.mailcap ~/.mailcap
 
 
-.PHONY: clean zsh git vim tmux i3
+.PHONY: clean zsh git vim tmux i3 albert
 clean:
 	rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.config/i3 ~/.muttrc
 	rm -rf ~/.zshrc ~/.zimrc ~/.zim ~/.zlogin
@@ -55,4 +57,4 @@ dep:
 	cd /tmp/bumblebee && makepkg -Acsi
 	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m
 
-all: clean tmux vim git zsh i3 mutt xresources compton
+all: clean tmux vim git zsh i3 mutt xresources compton albert
