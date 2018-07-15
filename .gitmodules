@@ -145,3 +145,6 @@
 [submodule "vim/plugins/vim-gitgutter"]
 	path = vim/plugins/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/plugins/fzf"]
+	path = vim/plugins/fzf
+	url = git://github.com/junegunn/fzf.vim
