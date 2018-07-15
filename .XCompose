@@ -49,3 +49,13 @@
 <Multi_key> <g> <z>            : "ζ"   U03B6    # GREEK SMALL LETTER ZETA
 <Multi_key> <i> <n>            : "∈"   U2208    # ELEMENT OF
 <Multi_key> <f> <a>            : "∀"   U2200    # FOR ALL
+
+# Fix Circumflex
+<dead_circumflex> <space>           : "^"   # CIRCUMFLEX ACCENT
+<dead_circumflex> <dead_circumflex> : "^"   # CIRCUMFLEX ACCENT
+<Multi_key> <asciicircum> <space>   : "^"   # CIRCUMFLEX ACCENT
+<Multi_key> <space> <asciicircum>   : "^"   # CIRCUMFLEX ACCENT
+<Multi_key> <greater> <space>       : "^"   # CIRCUMFLEX ACCENT
+<Multi_key> <space> <greater>       : "^"   # CIRCUMFLEX ACCENT
+
+
