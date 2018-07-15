@@ -15,7 +15,7 @@ let &backupdir = expand('~/.vim/.backup//')
 let &directory = expand('~/.vim/.swp//')
 set undofile
 
-colorscheme new-railscasts
+colorscheme happy_hacking
 source ~/.vim/config/plugin.vim
 source ~/.vim/config/keybindings.vim
 
