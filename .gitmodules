@@ -142,3 +142,6 @@
 [submodule "vim/plugins/pydoc"]
 	path = vim/plugins/pydoc
 	url = https://github.com/fs111/pydoc.vim
+[submodule "vim/plugins/vim-gitgutter"]
+	path = vim/plugins/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
