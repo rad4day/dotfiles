@@ -148,3 +148,6 @@
 [submodule "vim/plugins/fzf"]
 	path = vim/plugins/fzf
 	url = git://github.com/junegunn/fzf.vim
+[submodule "vim/plugins/vim-markdown"]
+	path = vim/plugins/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
