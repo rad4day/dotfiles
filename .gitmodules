@@ -151,3 +151,6 @@
 [submodule "vim/plugins/vim-markdown"]
 	path = vim/plugins/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim/plugins/ansible-vim"]
+	path = vim/plugins/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim
