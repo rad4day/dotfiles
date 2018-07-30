@@ -124,6 +124,9 @@ floating_modifier $mod
     # BIND DROPDOWN TERMINAL TO F1
     bindsym F1 [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
+    # Ranger Terminal
+    bindsym F2 exec "urxvt -name ranger -e ranger"
+
     # Urgent window
     bindsym $mod+x [urgent=latest] focus
 
@@ -190,7 +193,6 @@ floating_modifier $mod
 # {{{ STATUS BAR }}}
 bar {
     position       top
-
     status_command bumblebee-status $CLIENT_BUMBLEBEE
 }
 
