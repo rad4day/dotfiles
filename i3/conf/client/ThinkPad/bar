@@ -1,0 +1,5 @@
+# {{{ STATUS BAR }}}
+bar {
+    position       top
+    status_command /usr/bin/goblocks
+}

@@ -190,11 +190,6 @@ floating_modifier $mod
     }
     bindsym $mod+g mode "gaps"
 
-# {{{ STATUS BAR }}}
-bar {
-    position       top
-    status_command bumblebee-status $CLIENT_BUMBLEBEE
-}
 
 # {{{ GAPS }}}
     gaps inner $gap_inner

@@ -1,0 +1,7 @@
+set $CLIENT_BUMBLEBEE -m disk nic sensors battery caffeine amixer brightness datetime -p battery.device=BAT0,BAT1 brightness.device_path=/sys/class/backlight/acpi_video0 disk.format={left} nic.states=^down sensors.path=/sys/class/thermal/thermal_zone2/temp  -t gruvbox-powerline
+
+# {{{ STATUS BAR }}}
+bar {
+    position       top
+    status_command bumblebee-status $CLIENT_BUMBLEBEE
+}
