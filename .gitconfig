@@ -6,6 +6,7 @@
     lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     cu = "!git branch --merged | grep -v '\\*' | grep -v master | xargs -n 1 git branch -d"
     undo = reset HEAD~
+    ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ; } ; gi"
 [commit]
 	gpgsign = true
 [core]
