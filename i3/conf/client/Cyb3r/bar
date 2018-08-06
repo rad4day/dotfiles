@@ -1,0 +1,7 @@
+set $CLIENT_BUMBLEBEE -m mpd load memory disk nic caffeine amixer datetime -p nic.states=^down -p amixer.left-click="pavucontrol" -t gruvbox-powerline
+
+# {{{ STATUS BAR }}}
+bar {
+    position       top
+    status_command bumblebee-status $CLIENT_BUMBLEBEE
+}

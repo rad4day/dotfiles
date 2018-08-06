@@ -10,4 +10,4 @@ if [ ! -d $CLIENT ]; then
     cp -r ~/.dotfiles/i3/conf/client/default ~/.dotfiles/i3/conf/client/$(hostname)
 fi
 
-cat ${CLIENT}header ${COMMON}base ${CLIENT}assignments ${COMMON}footer > ~/.dotfiles/i3/config
+cat ${CLIENT}header ${COMMON}base ${CLIENT}bar ${CLIENT}assignments ${COMMON}footer > ~/.dotfiles/i3/config
