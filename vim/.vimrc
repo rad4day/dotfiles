@@ -19,9 +19,14 @@ colorscheme happy_hacking
 source ~/.vim/config/plugin.vim
 source ~/.vim/config/keybindings.vim
 
+" General editor settings
 set tabstop=4
 set shiftwidth=4
 set cc=120
+set splitbelow
+set splitright
+
+
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 20
