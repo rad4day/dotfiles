@@ -61,9 +61,6 @@
 [submodule "vim/plugins/javacomplete"]
 	path = vim/plugins/javacomplete
 	url = https://github.com/vim-scripts/javacomplete
-[submodule "vim/plugins/pythonsyntax"]
-	path = vim/plugins/pythonsyntax
-	url = https://github.com/hdima/python-syntax
 [submodule "vim/plugins/vim-python-pep8-indent"]
 	path = vim/plugins/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent
@@ -154,3 +151,9 @@
 [submodule "vim/plugins/ansible-vim"]
 	path = vim/plugins/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
+[submodule "vim/plugins/traces.vim"]
+	path = vim/plugins/traces.vim
+	url = https://github.com/markonm/traces.vim
+[submodule "vim/plugins/vim-window-resize-easy"]
+	path = vim/plugins/vim-window-resize-easy
+	url = https://github.com/roxma/vim-window-resize-easy

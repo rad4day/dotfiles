@@ -70,8 +70,10 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 
-" PythonSyntax
-let python_highlight_all = 1
+" PyMode
+let g:pymode_lint = 0
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
 
 
 " Simpylfold
@@ -83,7 +85,7 @@ let g:SuperTabDefaultCompletionType = "<c-space>"
 
 
 " Ale
-let g:ale_linters = {"python": ["flake8"]}
+let g:ale_linters = {"python": ["flake8"], "python3": ["flake8"]}
 
 
 " UltiSnips
