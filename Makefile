@@ -15,7 +15,9 @@ vim:
 
 git:
 	rm ~/.gitconfig || echo
+	rm ~/.gitmessage || echo
 	ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+	ln -s ~/.dotfiles/.gitmessage ~/.gitmessage
 
 xresources:
 	rm ~/.Xresources
