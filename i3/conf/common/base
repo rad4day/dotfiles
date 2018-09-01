@@ -44,6 +44,7 @@ floating_modifier $mod
 
     # start a terminal
     bindsym $mod+Return exec $TERMINAL
+    bindsym $mod+Shift+Return exec $TERMINAL -name forced_term
 
     # kill focused window
     bindsym $mod+Shift+q kill
