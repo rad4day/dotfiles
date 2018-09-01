@@ -1,9 +1,17 @@
 " Plugin Manager
-execute pathogen#infect('plugins/{}')
-execute pathogen#infect('snippets/{}')
+source ~/.vim/config/plugins.vim
+
+" Make sure plug.vim is present
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  source ~/.vim/autoload/plug.vim
+  autocmd VimEnter * PlugInstall --sync
+endif
+
 
 " Prepare central backup/swap/undo directory
-let &undodir   = expand('~/.vim/.undo')
+let &undodir   = expand('~/.vim/.undo//')
 let &backupdir = expand('~/.vim/.backup//')
 let &directory = expand('~/.vim/.swp//')
 
@@ -39,16 +47,13 @@ colorscheme happy_hacking
 
 
 " Apply plugin configurations
-source ~/.vim/config/plugin.vim
+source ~/.vim/config/pluginconfig.vim
 
 " Apply custom keybindings
 source ~/.vim/config/keybindings.vim
 
 " Apply settings for custom filetypes
 source ~/.vim/config/filetypes.vim
-
-" Rebuild help files on startup
-autocmd vimenter * Helptags
 
 " Transparency
 hi Normal guibg=NONE ctermbg=NONE
