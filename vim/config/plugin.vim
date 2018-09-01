@@ -21,8 +21,6 @@ let g:airline_theme="minimalist"
 autocmd TextChanged * GitGutter
 
 
-
-
 " JavaComplete
 if has("autocmd")
   autocmd Filetype java setlocal omnifunc=javacomplete#CompleteParamsInfo

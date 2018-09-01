@@ -148,12 +148,12 @@
 [submodule "vim/plugins/ansible-vim"]
 	path = vim/plugins/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
-[submodule "vim/plugins/traces.vim"]
-	path = vim/plugins/traces.vim
-	url = https://github.com/markonm/traces.vim
 [submodule "vim/plugins/vim-window-resize-easy"]
 	path = vim/plugins/vim-window-resize-easy
 	url = https://github.com/roxma/vim-window-resize-easy
+[submodule "vim/plugins/traces.vim"]
+	path = vim/plugins/traces.vim
+	url = https://github.com/markonm/traces.vim
 [submodule "vim/plugins/nerdtree"]
 	path = vim/plugins/nerdtree
 	url = https://github.com/scrooloose/nerdtree
