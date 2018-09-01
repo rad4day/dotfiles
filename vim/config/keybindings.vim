@@ -15,11 +15,26 @@ vno <right> <NOP>
 " Misc Keybindings
 let mapleader = ","
 
+" Buffers
+nmap  <F3> :Buffers<CR>
+imap <F3> <ESC><ESC>:Buffers<CR>
+vmap <F3> <ESC><ESC>:Buffers<CR>
+
+" Nerdtree
+nmap <silent> <F4> <ESC>:NERDTreeToggle<CR>
+
+" SingleCompile
+nmap <F8> :SCChooseCompiler<CR>
+nmap <F9> :SCCompile<cr>
+nmap <F10> :SCCompileRun<cr>
+
+
 " Window Movement
 nnoremap <silent> <C-H> <C-W><C-H>
 nnoremap <silent> <C-J> <C-W><C-J>
 nnoremap <silent> <C-K> <C-W><C-K>
 nnoremap <silent> <C-L> <C-W><C-L>
+
 
 " Yankstack
 nmap <silent> <S-P> <Plug>yankstack_substitute_newer_paste
@@ -29,13 +44,6 @@ nmap <silent> <C-P> <Plug>yankstack_substitute_older_paste
 inoremap <C-space> <C-N>
 imap <C-@> <C-Space>
 
-" Syntastic
-nnoremap <F2> :SyntasticToggleMode<CR>
-
-" SingleCompile
-nmap <F8> :SCChooseCompiler<CR>
-nmap <F9> :SCCompile<cr>
-nmap <F10> :SCCompileRun<cr>
 
 nmap <C-c> g~iw
 
