@@ -41,6 +41,19 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 
+" NerdTree
+let NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrowExpandable = '🗀'
+let g:NERDTreeDirArrowCollapsible = '🗁'
+let g:NERDTreeHighlightFolders = 1
+let g:NERDTreeHighlightFoldersFullName = 1
+
+" autoclose if nerdtree is last open window
+augroup NERDTree
+	autocmd!
+	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup end
+
 " PyMode
 let g:pymode_lint = 0
 let g:pymode_syntax = 1

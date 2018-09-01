@@ -154,3 +154,6 @@
 [submodule "vim/plugins/vim-window-resize-easy"]
 	path = vim/plugins/vim-window-resize-easy
 	url = https://github.com/roxma/vim-window-resize-easy
+[submodule "vim/plugins/nerdtree"]
+	path = vim/plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree
