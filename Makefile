@@ -30,9 +30,12 @@ albert:
 	ln -s ~/.dotfiles/albert ~/.config/albert
 
 zsh:
+	cd ~/.dotfiles/zsh/ && git submodule init && git submodule update
+	rm ~/.zim || echo
 	ln -s ~/.dotfiles/zsh ~/.zim
+	cd ~/.dotfiles
 	zsh zimsetup.zsh
-	rm ~/.zimrc
+	rm ~/.zimrc || echo
 	ln -s ~/.dotfiles/.zimrc ~/.zimrc
 
 compton:
