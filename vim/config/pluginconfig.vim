@@ -80,6 +80,11 @@ autocmd BufEnter *[^(.rmd|.snippets)] EnableStripWhitespaceOnSave
 autocmd BufEnter *.snippets DisableStripWhitespaceOnSave
 
 
+" Workspaces
+let g:workspace_session_name = '.vsession'
+let g:workspace_autosave = 0
+let g:workspace_autosave_untrailspaces = 0
+
 " Yankstack
 let g:yankstack_map_keys = 0
 call yankstack#setup()

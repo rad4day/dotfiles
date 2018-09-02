@@ -1,6 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'mattn/emmet-vim'
+" Dependencies
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'roxma/nvim-yarp'
+
+" Miscellaneous Plugins
 Plug 'Shougo/neco-vim'
 Plug 'ervandew/supertab'
 Plug 'vim-airline/vim-airline'
@@ -15,25 +19,29 @@ Plug 'junegunn/fzf.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'roxma/vim-window-resize-easy'
 Plug 'markonm/traces.vim'
-
 Plug 'scrooloose/nerdcommenter'
+Plug 'thaerkh/vim-workspace'
+
+" NERDtree + Plugins
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'bonsaiben/bootstrap-snippets'
 Plug 'rbonvall/snipmate-snippets-bib'
 
+" Compilers
 Plug 'xuhdev/singlecompile'
 Plug 'jiangmiao/auto-pairs'
-Plug 'roxma/vim-hug-neovim-rpc'
-Plug 'roxma/nvim-yarp'
 
+" Autocomplete
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-jedi'
 
+" Language Specific stuff (Language Plugins, Linters, etc)
 Plug 'w0rp/ale'
 Plug 'klen/python-mode'
 Plug 'fs111/pydoc.vim'
@@ -43,6 +51,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'pearofducks/ansible-vim'
 
+" Git integration
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
