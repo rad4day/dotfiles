@@ -33,7 +33,7 @@ zsh:
 	ln -s ~/.dotfiles/zsh ~/.zim
 	zsh zimsetup.zsh
 	rm ~/.zimrc
-	ln -s ~/.dotfiles/zsh/.zimrc ~/.zimrc
+	ln -s ~/.dotfiles/.zimrc ~/.zimrc
 
 compton:
 	ln -s ~/.dotfiles/.compton.conf ~/.compton.conf
