@@ -32,6 +32,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'bonsaiben/bootstrap-snippets'
 Plug 'rbonvall/snipmate-snippets-bib'
+Plug 'rad4day/vim-custom-snippets'
 
 " Compilers
 Plug 'xuhdev/singlecompile'
