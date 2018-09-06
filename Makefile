@@ -30,7 +30,7 @@ albert:
 	ln -s ~/.dotfiles/albert ~/.config/albert
 
 zsh:
-	cd ~/.dotfiles/zsh/ && git submodule init && git submodule update
+	cd ~/.dotfiles/zsh/ && git submodule init && git submodule update --recursive
 	rm ~/.zim || echo
 	ln -s ~/.dotfiles/zsh ~/.zim
 	cd ~/.dotfiles
