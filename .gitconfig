@@ -12,3 +12,5 @@
     template = ~/.gitmessage
 [core]
 	autocrlf = input
+[github]
+	user = rad4day
