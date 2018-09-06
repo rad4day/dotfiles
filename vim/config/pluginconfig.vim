@@ -54,8 +54,11 @@ augroup end
 
 " PyMode
 let g:pymode_lint = 0
-let g:pymode_syntax = 1
+let g:pymode_syntax = 0
 let g:pymode_syntax_all = 1
+
+" python syntax
+let g:python_highlight_all = 1
 
 
 " Simpylfold

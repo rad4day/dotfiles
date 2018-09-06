@@ -45,6 +45,7 @@ Plug 'zchee/deoplete-jedi'
 " Language Specific stuff (Language Plugins, Linters, etc)
 Plug 'w0rp/ale'
 Plug 'klen/python-mode'
+Plug 'hdima/python-syntax'
 Plug 'fs111/pydoc.vim'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'vim-scripts/javacomplete'
@@ -55,5 +56,8 @@ Plug 'pearofducks/ansible-vim'
 " Git integration
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'mattn/gist-vim'
+    " dependency
+    Plug 'mattn/webapi-vim'
 
 call plug#end()
