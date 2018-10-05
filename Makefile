@@ -5,7 +5,7 @@ tmux:
 vim:
 	ln -s ~/.dotfiles/vim ~/.vim
 	ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
-	sudo pip3 uninstall greenlet
+	# sudo pip3 uninstall greenlet
 	sudo pip3 install neovim
 	#sudo pip2 uninstall greenlet
 	sudo pacman -S python-greenlet
@@ -54,6 +54,7 @@ mutt: dep
 clean:
 	rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.config/i3 ~/.muttrc
 	rm -rf ~/.zshrc ~/.zimrc ~/.zim ~/.zlogin
+	rm -rf ~/.mailcap ~/.zsh 
 
 dep:
 	git clone https://aur.archlinux.org/powerline-fonts-git.git /tmp/powerline-font
