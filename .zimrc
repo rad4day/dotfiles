@@ -95,7 +95,7 @@ zhighlighters=(main brackets cursor)
 #zpacman_frontend='powerpill'
 
 # Load any helper scripts as defined here
-#zpacman_helper=(aur)#################
+#zpacman_helper=(aur)##################
 # CORE SETTINGS #
 #################
 
@@ -200,27 +200,11 @@ alias -g steam-wine='WINEDEBUG=-all wine ~/.wine/drive_c/Program\ Files\ \(x86\)
 
 # History search
 bindkey -v
-bindkey '^R' history-incremental-search-backward
+# bindkey '^R' history-incremental-search-backward
 
 # fzf
-source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-
-# thefuck
-fuck () {
-    TF_PYTHONIOENCODING=$PYTHONIOENCODING;
-    export TF_SHELL=zsh;
-    export TF_ALIAS=fuck;
-    export TF_SHELL_ALIASES=$(alias);
-    export TF_HISTORY="$(fc -ln -10)";
-    export PYTHONIOENCODING=utf-8;
-    TF_CMD=$(
-        thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
-    ) && eval $TF_CMD;
-    unset TF_HISTORY;
-    export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
-    test -n "$TF_CMD" && print -s $TF_CMD
-}
+source /usr/share/fzf/key-bindings.zsh
 
 export VISUAL="vim"
 export PATH=/usr/local/texlive/2016/bin/x86_64-linux:$PATH
