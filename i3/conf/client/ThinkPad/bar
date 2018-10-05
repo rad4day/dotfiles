@@ -1,5 +1,7 @@
+set $CLIENT_BUMBLEBEE -m load spaceapi memory disk nic amixer datetime -p nic.states=up nic.format="{ssid} {ip}" amixer.left-click="pavucontrol" spaceapi.prefix=" " -t gruvbox-powerline
+
 # {{{ STATUS BAR }}}
 bar {
     position       top
-    status_command /usr/bin/goblocks
+    status_command bumblebee-status $CLIENT_BUMBLEBEE
 }
