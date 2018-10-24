@@ -45,6 +45,22 @@ set splitright
 " Set colors
 colorscheme happy_hacking
 
+" Turn on the Wild menu
+set wildmenu
+
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+if has("win16") || has("win32")
+    set wildignore+=.git\*,.hg\*,.svn\*
+else
+    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+endif
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
 
 " Apply plugin configurations
 source ~/.vim/config/pluginconfig.vim
