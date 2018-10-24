@@ -142,3 +142,5 @@ i3/scripts/dmenu/database.sqlite
 albert/*.db
 vim/plugged/
 vim/autoload/plug.vim
+albert.conf
+albert/albert.conf
