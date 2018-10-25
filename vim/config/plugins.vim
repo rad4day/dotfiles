@@ -52,6 +52,7 @@ Plug 'vim-scripts/javacomplete'
 Plug 'udalov/kotlin-vim'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'pearofducks/ansible-vim'
+Plug 'justinmk/vim-syntax-extra'
 
 " Git integration
 Plug 'airblade/vim-gitgutter'
