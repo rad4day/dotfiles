@@ -149,6 +149,9 @@ floating_modifier $mod
     bindsym XF86Battery	exec xautolock -locknow
     bindsym XF86Launch1     exec "xautolock -locknow; sleep 1; xset dpms force off"
 
+    # Lock screen
+    bindsym $mod+Ctrl+l     exec "xautolock -locknow; sleep 1; xset dpms force off"
+
     # Screenshot
     bindsym Print exec ~/.config/i3/scripts/screenshot.sh
 

@@ -1,4 +1,4 @@
-set $CLIENT_BUMBLEBEE -m mpd load space memory disk nic caffeine amixer datetime -p nic.states=^down -p amixer.left-click="pavucontrol" space.prefix=" " -t gruvbox-powerline
+set $CLIENT_BUMBLEBEE -m mpd load spaceapi memory disk nic caffeine amixer datetime -p nic.states=^down -p amixer.left-click="pavucontrol" spaceapi.prefix=" " -t gruvbox-powerline
 
 # {{{ STATUS BAR }}}
 bar {
