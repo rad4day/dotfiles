@@ -53,6 +53,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'pearofducks/ansible-vim'
 Plug 'justinmk/vim-syntax-extra'
+Plug 'rhysd/vim-clang-format'
 
 " Git integration
 Plug 'airblade/vim-gitgutter'
