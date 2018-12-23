@@ -1,6 +1,5 @@
 # {{{ KEYBOARD MAP }}}
-#  exec_always setxkbmap de -option 'compose:ralt,lv3:caps_switch'
-exec_always setxkbmap de neo
+ exec_always setxkbmap de -option 'compose:ralt,lv3:caps_switch'
 
 # {{{ AUTOSTART  }}}
 exec ~/.config/autorun.sh

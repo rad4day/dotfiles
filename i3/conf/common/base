@@ -32,9 +32,9 @@ font pango:Hack 8
 
 # {{{ DROPDOWN TERMINAL }}}
     for_window [instance="dropdown"] floating enable
-    for_window [instance="dropdown"] resize set 625 400
+    for_window [instance="dropdown"] resize set 800 600
     for_window [instance="dropdown"] move scratchpad
-    for_window [instance="dropdown"] border pixel 2
+    for_window [instance="dropdown"] border pixel 1
     exec --no-startup-id $TERMINAL -name dropdown
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -48,9 +48,6 @@ floating_modifier $mod
 
     # kill focused window
     bindsym $mod+Shift+q kill
-
-    # Program launcher
-    # bindsym Mod1+space exec ~/.config/i3/scripts/dmenu/init.py
 
     # change focus
     bindsym $mod+h focus left

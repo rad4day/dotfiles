@@ -5,8 +5,8 @@
     set $TERMINAL urxvt
 
     # gaps
-    set $gap_outer 25
-    set $gap_inner 15
+    set $gap_outer 15
+    set $gap_inner 10
 
     set $ws1 "1 "
     # Terminal
