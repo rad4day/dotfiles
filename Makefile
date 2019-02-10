@@ -1,6 +1,8 @@
 tmux:
+	git submodule init
+	git submodule update
 	ln -s ~/.dotfiles/tmux ~/.tmux
-	ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+	ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 vim:
 	ln -s ~/.dotfiles/vim ~/.vim
@@ -53,14 +55,16 @@ mutt: dep
 .PHONY: clean zsh git vim tmux i3 albert
 clean:
 	rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.config/i3 ~/.muttrc
-	rm -rf ~/.zshrc ~/.zimrc ~/.zim ~/.zlogin
+	rm -rf ~/.zshrc ~/.zimrc ~/.zim ~/.zlogin ~/.compton.conf
 	rm -rf ~/.mailcap ~/.zsh 
+	rm -rf ~/.config/albert
+	rm -rf /tmp/makedir/
 
 dep:
-	git clone https://aur.archlinux.org/powerline-fonts-git.git /tmp/powerline-font
-	cd /tmp/powerline-font && makepkg -Acsi
-	git clone https://aur.archlinux.org/bumblebee-status-git.git /tmp/bumblebee
-	cd /tmp/bumblebee && makepkg -Acsi
+	git clone https://aur.archlinux.org/powerline-fonts-git.git /tmp/makedir/powerline-font
+	cd /tmp/makedir/powerline-font && makepkg -Acsi
+	git clone https://aur.archlinux.org/bumblebee-status-git.git /tmp/makedir/bumblebee
+	cd /tmp/makedir/bumblebee && makepkg -Acsi
 	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m
 
 all: clean tmux vim git zsh i3 mutt xresources compton albert
