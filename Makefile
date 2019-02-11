@@ -1,3 +1,6 @@
+fzf:
+	pacman -S fzf
+
 tmux:
 	git submodule init
 	git submodule update
@@ -38,7 +41,9 @@ zsh:
 	cd ~/.dotfiles
 	zsh zimsetup.zsh
 	rm ~/.zimrc || echo
+	rm ~/.zshrc || echo
 	ln -s ~/.dotfiles/.zimrc ~/.zimrc
+	ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 compton:
 	ln -s ~/.dotfiles/.compton.conf ~/.compton.conf
