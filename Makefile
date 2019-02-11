@@ -1,5 +1,5 @@
 fzf:
-	pacman -S fzf
+	sudo pacman -S fzf
 
 tmux:
 	git submodule init
