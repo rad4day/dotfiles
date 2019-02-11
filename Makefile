@@ -1,6 +1,3 @@
-fzf:
-	sudo pacman -S fzf
-
 tmux:
 	git submodule init
 	git submodule update
@@ -34,7 +31,7 @@ xcompose:
 albert:
 	ln -s ~/.dotfiles/albert ~/.config/albert
 
-zsh:
+zsh: dep
 	cd ~/.dotfiles/zsh/ && git submodule init && git submodule update --recursive
 	rm ~/.zim || echo
 	ln -s ~/.dotfiles/zsh ~/.zim
@@ -70,6 +67,6 @@ dep:
 	cd /tmp/makedir/powerline-font && makepkg -Acsi
 	git clone https://aur.archlinux.org/bumblebee-status-git.git /tmp/makedir/bumblebee
 	cd /tmp/makedir/bumblebee && makepkg -Acsi
-	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m
+	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m fzf fd
 
 all: clean tmux vim git zsh i3 mutt xresources compton albert

@@ -1,5 +1,3 @@
-
-
 #
 # User configuration sourced by interactive shells
 #
@@ -9,5 +7,7 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 # Start zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+
+export FZF_DEFAULT_COMMAND='fd --type f'
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
