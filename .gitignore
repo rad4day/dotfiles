@@ -144,3 +144,4 @@ vim/plugged/
 vim/autoload/plug.vim
 albert.conf
 albert/albert.conf
+albert/last_used/version
