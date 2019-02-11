@@ -1,3 +1,6 @@
+urlview:
+	rm ~/.urlview || true
+	ln -s ~/.dotfiles/.urlview ~/.urlview
 tmux:
 	git submodule init
 	git submodule update
