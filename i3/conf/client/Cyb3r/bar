@@ -1,4 +1,4 @@
-set $CLIENT_BUMBLEBEE -m spotify load spaceapi memory disk nic amixer datetime -p nic.states=^down -p amixer.left-click="pavucontrol" spaceapi.format=" %%space%%: %%state.open%Geöffnet%Geschlossen%%" -t gruvbox-powerline -a load spaceapi memory disk
+set $CLIENT_BUMBLEBEE -m spotify load spaceapi memory disk nic amixer datetime -p nic.states=^down -p amixer.left-click="pavucontrol" spaceapi.format=" %%space%%: %%state.open%Geöffnet%Geschlossen%%" -t gruvbox-powerline-light -a load spaceapi memory disk
 
 # {{{ STATUS BAR }}}
 bar {
