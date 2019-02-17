@@ -72,4 +72,4 @@ dep:
 	cd /tmp/makedir/bumblebee && makepkg -Acsi
 	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m fzf fd
 
-all: clean tmux vim git zsh i3 mutt xresources compton albert
+all: clean i3 zsh mutt compton xcompose xresources albert git vim tmux urlview
