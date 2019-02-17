@@ -11,3 +11,4 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 export FZF_DEFAULT_COMMAND='fd --type f'
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
+alias pdfdiff="diffpdf"
