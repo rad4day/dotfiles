@@ -77,6 +77,10 @@ let g:ale_linters = {"python": ["flake8"], "python3": ["flake8"]}
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" VIM-MARKDOWN
+let g:markdown_syntax_conceal=0
+let g:vim_markdown_conceal = 0
+
 
 " Whitespace
 autocmd BufEnter *[^(.rmd|.snippets)] EnableStripWhitespaceOnSave
