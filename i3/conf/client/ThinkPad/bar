@@ -1,4 +1,4 @@
-set $CLIENT_BUMBLEBEE -m spotify load spaceapi memory disk nic battery sensors amixer datetime -p sensors.path="/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp3_input" nic.states=^down amixer.left-click="pavucontrol" battery.device="BAT0,BAT1" spaceapi.format=" %%space%%: %%state.open%Geöffnet%Geschlossen%%" -t gruvbox-powerline -a load spaceapi memory disk
+set $CLIENT_BUMBLEBEE -m spotify load spaceapi memory disk nic battery sensors amixer datetime -p sensors.path="/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp3_input" nic.states=^down amixer.left-click="pavucontrol" battery.device="BAT0,BAT1" spaceapi.format=" %%space%%: %%state.open%Geöffnet%Geschlossen%%" -t onedark-powerline -a load spaceapi memory disk
 
 # {{{ STATUS BAR }}}
 bar {
