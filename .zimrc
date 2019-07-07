@@ -105,6 +105,7 @@ bindkey -v
 
 export VISUAL="vim"
 export PATH=/usr/local/texlive/2016/bin/x86_64-linux:$PATH
+export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
 
 # If not running interactively, do not do anything
 [[ $- != *i* ]] && return
