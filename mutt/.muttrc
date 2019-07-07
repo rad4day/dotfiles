@@ -4,7 +4,7 @@ source ~/.config/.mutt.mailboxes
 
 set folder=imaps://imap.mailbox.org:993/
 set spoolfile=+INBOX
-mailboxes =INBOX =INBOX/Freelance =INBOX/KIT =INBOX/Github =INBOX/Coreboot =INBOX/Archiv =Spam =Sent
+mailboxes =INBOX =INBOX/Freelance =INBOX/KIT =INBOX/Github =INBOX/Finanzen =INBOX/Archiv =Spam =Sent
 set header_cache = ~/.cache/mutt
 unset imap_passive
 set imap_keepalive = 300
