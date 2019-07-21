@@ -44,7 +44,7 @@ Plug 'zchee/deoplete-jedi'
 
 " Language Specific stuff (Language Plugins, Linters, etc)
 Plug 'w0rp/ale'
-Plug 'klen/python-mode'
+" Plug 'klen/python-mode'
 Plug 'hdima/python-syntax'
 Plug 'fs111/pydoc.vim'
 Plug 'Vimjas/vim-python-pep8-indent'
