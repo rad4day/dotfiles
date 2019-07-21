@@ -1,1 +1,1 @@
-COMMAND /usr/bin/firefox %s
+COMMAND /usr/bin/brave %s
