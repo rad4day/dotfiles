@@ -9,7 +9,7 @@
 # Select what modules you would like enabled.
 # The second line of modules may depend on options set by modules in the first line.
 # These dependencies are noted on the respective module's README.md.
-zmodules=(directory environment git history input utility custom \
+zmodules=(directory environment history input utility custom \
           syntax-highlighting prompt completion \
           pacman git-info fasd autosuggestions )
 
@@ -106,6 +106,7 @@ bindkey -v
 export VISUAL="vim"
 export PATH=/usr/local/texlive/2016/bin/x86_64-linux:$PATH
 export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
+export PATH=$HOME/go/bin:$PATH
 
 # If not running interactively, do not do anything
 [[ $- != *i* ]] && return

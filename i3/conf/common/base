@@ -32,7 +32,7 @@ font pango:Hack 8
 
 # {{{ DROPDOWN TERMINAL }}}
     for_window [instance="dropdown"] floating enable
-    for_window [instance="dropdown"] resize set 800 600
+    for_window [instance="dropdown"] resize set 1024 768
     for_window [instance="dropdown"] move scratchpad
     for_window [instance="dropdown"] border pixel 1
     exec --no-startup-id $TERMINAL -name dropdown
@@ -200,6 +200,6 @@ floating_modifier $mod
     gaps outer $gap_outer
 
 # {{{ NO BORDERS }}}
-    default_border none
+    default_border pixel
     default_floating_border normal
 
