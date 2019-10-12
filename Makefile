@@ -52,14 +52,9 @@ i3: dep
 	ln -s ~/.dotfiles/i3 ~/.config/i3
 	cd i3/conf/ && ./build.sh
 
-mutt: dep
-	ln -s ~/.dotfiles/mutt/.muttrc ~/.muttrc
-	ln -s ~/.dotfiles/mutt/.mailcap ~/.mailcap
-
-
 .PHONY: clean zsh git vim tmux i3 albert
 clean:
-	rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.config/i3 ~/.muttrc
+	rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.config/i3
 	rm -rf ~/.zshrc ~/.zimrc ~/.zim ~/.zlogin ~/.compton.conf
 	rm -rf ~/.mailcap ~/.zsh 
 	rm -rf ~/.config/albert
@@ -72,4 +67,4 @@ dep:
 	cd /tmp/makedir/bumblebee && makepkg -Acsi
 	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m fzf fd
 
-all: clean i3 zsh mutt compton xcompose xresources albert git vim tmux urlview
+all: clean i3 zsh compton xcompose xresources albert git vim tmux urlview

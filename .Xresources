@@ -1,5 +1,5 @@
 URxvt.foreground:   #d0d1d2
-URxvt.background:   [80]#1c1c1c
+URxvt.background:   #1c1c1c
 URxvt.cursorColor:  #d0d1d2
 
 URxvt.transparent: true
