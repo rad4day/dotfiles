@@ -46,6 +46,9 @@ floating_modifier $mod
     bindsym $mod+Return exec $TERMINAL
     bindsym $mod+Shift+Return exec $TERMINAL -name forced_term
 
+    # bluetooth dmenu
+    bindsym $mod+b exec ~/.dotfiles/i3/scripts/dmenu_bt.sh
+
     # kill focused window
     bindsym $mod+Shift+q kill
 
@@ -200,6 +203,6 @@ floating_modifier $mod
     gaps outer $gap_outer
 
 # {{{ NO BORDERS }}}
-    default_border pixel
+    default_border none
     default_floating_border normal
 
