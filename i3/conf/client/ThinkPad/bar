@@ -1,7 +1,10 @@
-set $CLIENT_BUMBLEBEE -m spotify load memory disk nic battery sensors amixer datetime -p sensors.path="/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp3_input" nic.states=^down amixer.left-click="pavucontrol" battery.device="BAT0,BAT1" -t onedark-powerline -a load spaceapi memory disk
+# set $CLIENT_BUMBLEBEE -m spotify load memory disk nic amixer datetime -p nic.states=^down -p amixer.left-click="pavucontrol" -t onedark-powerline -a load memory disk
+#
+# # {{{ STATUS BAR }}}
+# bar {
+#     position       top
+#     status_command bumblebee-status $CLIENT_BUMBLEBEE
+# }
 
-# {{{ STATUS BAR }}}
-bar {
-    position       top
-    status_command bumblebee-status $CLIENT_BUMBLEBEE
-}
+exec_always --no-startup-id $HOME/.polybar/polybar_wrapper.sh
+

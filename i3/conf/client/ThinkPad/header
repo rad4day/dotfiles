@@ -4,8 +4,9 @@
     set $TERMINAL urxvt
 
     # gaps
-    set $gap_outer 15
-    set $gap_inner 10
+    set $gap_outer 10
+    set $gap_inner 0
+    smart_borders on
 
     set $ws1 "1 "
     # Terminal
