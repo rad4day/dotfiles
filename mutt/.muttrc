@@ -1,6 +1,6 @@
 set my_name = "Tobias Manske"
 
-source ~/.config/.mutt.mailboxes
+source "gpg -d ~/.config/.mutt.mailboxes.gpg |"
 
 set folder=imaps://imap.mailbox.org:993/
 set spoolfile=+INBOX
