@@ -12,4 +12,4 @@ fi
 DIRS=$(find -L "$1" -mindepth 1 -maxdepth 1 -type d | rev | cut -d "/" -f1 | rev)
 FILES=$(find -L "$1" -mindepth 1 -maxdepth 1 -type f| rev | cut -d "/" -f1 | rev)
 
-echo "$DIRS$FILES" | dmenu | xargs -I"{}" $0 "$1/{}"
+echo -e "$DIRS\n$FILES" | dmenu | xargs -I"{}" $0 "$1/{}"

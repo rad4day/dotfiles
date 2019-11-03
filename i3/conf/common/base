@@ -49,6 +49,9 @@ floating_modifier $mod
     # bluetooth dmenu
     bindsym $mod+b exec ~/.dotfiles/i3/scripts/dmenu_bt.sh
 
+    # pdf favourites dmenu
+    bindsym $mod+p exec ~/.dotfiles/i3/scripts/dir_dmenu.sh ~/.local/favpdf
+
     # kill focused window
     bindsym $mod+Shift+q kill
 
