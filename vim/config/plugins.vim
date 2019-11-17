@@ -5,22 +5,37 @@ Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'roxma/nvim-yarp'
 
 " Miscellaneous Plugins
+" Deoplete Source
 Plug 'Shougo/neco-vim'
-Plug 'ervandew/supertab'
+" Multiuse- tab key
+" Plug 'ervandew/supertab'
+" Airline style status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Highlight and fix trailing whitespace
 Plug 'ntpeters/vim-better-whitespace'
+" Additional motion with visual highlighting
 Plug 'easymotion/vim-easymotion'
+" Yank History Cycling on meta-[shift]-p
 Plug 'maxbrunsfeld/vim-yankstack'
+" Auto indent
 Plug 'yggdroot/indentline'
+" Python folding
 Plug 'tmhedberg/simpylfold'
+" Update folding less often
 Plug 'Konfekt/fastfold'
+" Use FZF for browsing vim buffers
 Plug 'junegunn/fzf.vim'
+" Markdown support
 Plug 'plasticboy/vim-markdown'
+" Window resizing c-w [<>-+=_|]
 Plug 'roxma/vim-window-resize-easy'
+" Regex highlighting and in buffer live replacement
 Plug 'markonm/traces.vim'
+" Better comments
 Plug 'scrooloose/nerdcommenter'
-Plug 'thaerkh/vim-workspace'
+" Work on brackets in pairs
+Plug 'jiangmiao/auto-pairs'
 
 " NERDtree + Plugins
 Plug 'scrooloose/nerdtree'
@@ -28,23 +43,30 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'bonsaiben/bootstrap-snippets'
-Plug 'rbonvall/snipmate-snippets-bib'
-Plug 'rad4day/vim-custom-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+" Plug 'bonsaiben/bootstrap-snippets'
+" Plug 'rbonvall/snipmate-snippets-bib'
 
 " Compilers
 Plug 'xuhdev/singlecompile'
-Plug 'jiangmiao/auto-pairs'
 
 " Autocomplete
-Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-jedi'
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'zchee/deoplete-jedi'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+
+" Coc extensions
+Plug 'Maxattax97/coc-ccls'
+Plug 'iamcco/coc-gitignore'
+Plug 'neoclide/coc-python'
+Plug 'neoclide/coc-json'
+Plug 'neoclide/coc-java'
 
 " Language Specific stuff (Language Plugins, Linters, etc)
+" Asynchronous lint engine
 Plug 'w0rp/ale'
-" Plug 'klen/python-mode'
+" Python
 Plug 'hdima/python-syntax'
 Plug 'fs111/pydoc.vim'
 Plug 'Vimjas/vim-python-pep8-indent'
@@ -53,7 +75,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'pearofducks/ansible-vim'
 Plug 'justinmk/vim-syntax-extra'
-Plug 'rhysd/vim-clang-format'
+" Plug 'rhysd/vim-clang-format'
 
 " Git integration
 Plug 'airblade/vim-gitgutter'
