@@ -21,6 +21,8 @@ filetype plugin indent on
 
 set encoding=utf-8
 
+set foldmethod=syntax
+
 " Use whitespace instead of tab
 set expandtab
 
