@@ -37,6 +37,11 @@ font pango:Hack 8
     for_window [instance="dropdown"] border pixel 1
     exec --no-startup-id $TERMINAL -name dropdown
 
+# {{{ TOGGL }}}
+    for_window [class="Toggl Desktop"] floating enable
+    for_window [class="Toggl Desktop"] border pixel 1
+    for_window [class="Toggl Desktop"] move scratchpad
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -75,7 +80,7 @@ floating_modifier $mod
     bindsym $mod+f fullscreen toggle
 
     # change container layout (stacked, tabbed, toggle split)
-    bindsym $mod+s layout stacking
+    # bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
@@ -127,6 +132,7 @@ floating_modifier $mod
 
     # BIND DROPDOWN TERMINAL TO F1
     bindsym F1 [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+    bindsym $mod+s [class="Toggl Desktop"] scratchpad show;
 
     # Ranger Terminal
     bindsym $mod+F2 exec "urxvt -name ranger -e ranger"
