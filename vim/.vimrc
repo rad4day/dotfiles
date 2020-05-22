@@ -1,5 +1,3 @@
-" Plugin Manager
-source ~/.vim/config/plugins.vim
 
 " Make sure plug.vim is present
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -9,6 +7,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync
 endif
 
+" Plugin Manager
+source ~/.vim/config/plugins.vim
 
 " Prepare central backup/swap/undo directory
 let &undodir   = expand('~/.vim/.undo//')
