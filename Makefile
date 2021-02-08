@@ -10,10 +10,8 @@ tmux:
 vim:
 	ln -s ~/.dotfiles/vim ~/.vim
 	ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
-	# sudo pip3 uninstall greenlet
 	sudo pip3 install neovim
-	#sudo pip2 uninstall greenlet
-	sudo pacman -S python-greenlet
+	sudo pacman -S python-greenlet || true
 	mkdir -p ~/.dotfiles/vim/.swp
 	mkdir -p ~/.dotfiles/vim/.undo
 	mkdir -p ~/.dotfiles/vim/.backup
