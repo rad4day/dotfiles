@@ -22,9 +22,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "zsh"]
-	path = zsh
-	url = https://github.com/zimfw/zimfw
 [submodule "tmux"]
 	path = tmux
 	url = https://github.com/tony/tmux-config
