@@ -1,6 +1,3 @@
-urlview:
-	rm ~/.urlview || true
-	ln -s ~/.dotfiles/.urlview ~/.urlview
 tmux:
 	git submodule init
 	git submodule update
@@ -22,15 +19,8 @@ git:
 	ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 	ln -s ~/.dotfiles/.gitmessage ~/.gitmessage
 
-xresources:
-	rm ~/.Xresources
-	ln -s ~/.dotfiles/.Xresources ~/.Xresources
-xcompose:
-	rm ~/.XCompose || true
-	ln -s ~/.dotfiles/.XCompose ~/.XCompose
-
-albert:
-	ln -s ~/.dotfiles/albert ~/.config/albert
+gnupg:
+	for i in $(ls gnupg -1); do rm ~/.gnupg/$i; ln -s ~/.dotfiles/gnupg/$i ~/.gnupg/$i; done
 
 zsh:
 	rm -rf ~/.zim || true
@@ -48,19 +38,12 @@ i3: dep
 	ln -s ~/.dotfiles/i3 ~/.config/i3
 	cd i3/conf/ && ./build.sh
 
-.PHONY: clean zsh git vim tmux i3 albert
+.PHONY: clean zsh git vim tmux i3 albert gnupg
 clean:
 	rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.config/i3
 	rm -rf ~/.zshrc ~/.zimrc ~/.zim ~/.zlogin ~/.compton.conf
-	rm -rf ~/.mailcap ~/.zsh 
+	rm -rf ~/.mailcap ~/.zsh
 	rm -rf ~/.config/albert
 	rm -rf /tmp/makedir/
 
-dep:
-	git clone https://aur.archlinux.org/powerline-fonts-git.git /tmp/makedir/powerline-font
-	cd /tmp/makedir/powerline-font && makepkg -Acsi
-	git clone https://aur.archlinux.org/bumblebee-status-git.git /tmp/makedir/bumblebee
-	cd /tmp/makedir/bumblebee && makepkg -Acsi
-	sudo pacman -S awesome-terminal-fonts perl-anyevent-i3 perl-json-xs w3m fzf fd
-
-all: clean i3 zsh compton xcompose xresources albert git vim tmux urlview
+all: clean zsh git vim tmux
