@@ -32,14 +32,12 @@ xcompose:
 albert:
 	ln -s ~/.dotfiles/albert ~/.config/albert
 
-zsh: dep
-	cd ~/.dotfiles/zsh/ && git submodule init && git submodule update --recursive
-	rm ~/.zim || echo
-	ln -s ~/.dotfiles/zsh ~/.zim
+zsh:
+	rm -rf ~/.zim || true
 	cd ~/.dotfiles
-	zsh zimsetup.zsh
-	rm ~/.zimrc || echo
-	rm ~/.zshrc || echo
+	curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+	rm ~/.zimrc || true
+	rm ~/.zshrc || true
 	ln -s ~/.dotfiles/.zimrc ~/.zimrc
 	ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
