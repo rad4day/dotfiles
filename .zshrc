@@ -1,7 +1,3 @@
-# GPG for SSH
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent
 
 # Start configuration added by Zim install {{{
 #
@@ -131,4 +127,9 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 alias pdfdiff="diffpdf"
+
+# GPG for SSH
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
