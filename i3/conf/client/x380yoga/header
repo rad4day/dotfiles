@@ -1,0 +1,22 @@
+# {{{ VARIABLES  }}}
+
+    set $mod Mod4
+    set $TERMINAL urxvt
+
+    # gaps
+    set $gap_outer 15
+    set $gap_inner 10
+
+    set $ws1 "1 "
+    # Terminal
+    set $ws2 "2 "
+    # Work
+    set $ws3 "3 "
+    set $ws4 "4"
+    # Mail
+    set $ws5 "5 "
+    set $ws6 "6"
+    set $ws7 "7"
+    set $ws8 "8"
+    set $ws9 "9"
+    set $ws10 "10"
