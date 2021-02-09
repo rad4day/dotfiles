@@ -24,7 +24,13 @@ redshift:
 	ln -s ~/.dotfiles/redshift.conf ~/.config/redshift/redshift.conf
 
 gnupg:
-	for i in $(ls gnupg -1); do rm ~/.gnupg/$i; ln -s ~/.dotfiles/gnupg/$i ~/.gnupg/$i; done
+	rm ~/.gnupg/gpg.conf || true
+	rm ~/.gnupg/sshcontrol || true
+	rm ~/.gnupg/gpg-agent.conf || true
+	ln -s ~/.dotfiles/gnupg/gpg.conf ~/.gnupg/gpg.conf
+	ln -s ~/.dotfiles/gnupg/sshcontrol ~/.gnupg/sshcontrol
+	ln -s ~/.dotfiles/gnupg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+
 
 zsh:
 	rm -rf ~/.zim || true
