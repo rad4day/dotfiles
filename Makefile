@@ -19,6 +19,10 @@ git:
 	ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 	ln -s ~/.dotfiles/.gitmessage ~/.gitmessage
 
+redshift:
+	mkdir -p ~/.config/redshift
+	ln -s ~/.dotfiles/redshift.conf ~/.config/redshift/redshift.conf
+
 gnupg:
 	for i in $(ls gnupg -1); do rm ~/.gnupg/$i; ln -s ~/.dotfiles/gnupg/$i ~/.gnupg/$i; done
 
