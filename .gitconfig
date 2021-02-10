@@ -15,3 +15,5 @@
 	autocrlf = input
 [github]
 	user = rad4day
+[pull]
+	rebase = true
