@@ -126,10 +126,16 @@ bindkey -M vicmd 'j' history-substring-search-down
 export FZF_DEFAULT_COMMAND='fd --type f'
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
+
 alias pdfdiff="diffpdf"
+alias cb="xclip -sel clipboard"
+alias vi="vim"
 
 # GPG for SSH
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
+
+# Editor
+export EDITOR=vim
 
