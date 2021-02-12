@@ -84,4 +84,7 @@ Plug 'mattn/gist-vim'
     " dependency
     Plug 'mattn/webapi-vim'
 
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 call plug#end()
