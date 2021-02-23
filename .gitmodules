@@ -25,3 +25,6 @@
 [submodule "tmux"]
 	path = tmux
 	url = https://github.com/tony/tmux-config
+[submodule "idea"]
+	path = idea
+	url = git@git.tobiasmanske.de:user/rad4day/idea-settings.git
