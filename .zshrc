@@ -130,6 +130,7 @@ source /usr/share/fzf/key-bindings.zsh
 alias pdfdiff="diffpdf"
 alias cb="xclip -sel clipboard"
 alias vi="vim"
+alias ls="exa"
 
 # GPG for SSH
 export GPG_TTY="$(tty)"
