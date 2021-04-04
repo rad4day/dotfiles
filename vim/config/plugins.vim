@@ -14,8 +14,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Highlight and fix trailing whitespace
 Plug 'ntpeters/vim-better-whitespace'
-" Additional motion with visual highlighting
-Plug 'easymotion/vim-easymotion'
 " Yank History Cycling on meta-[shift]-p
 Plug 'maxbrunsfeld/vim-yankstack'
 " Auto indent
@@ -41,6 +39,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'junegunn/goyo.vim'
 
 " Snippets
 " Plug 'SirVer/ultisnips'

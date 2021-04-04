@@ -45,6 +45,8 @@ nmap <silent> <C-P> <Plug>yankstack_substitute_older_paste
 inoremap <C-space> <C-N>
 imap <C-@> <C-Space>
 
+cmap w!! w !sudo tee > /dev/null %
+
 " Toggle Case
 nmap <C-c> g~iw
 
