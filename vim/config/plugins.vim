@@ -4,34 +4,47 @@ call plug#begin('~/.vim/plugged')
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'roxma/nvim-yarp'
 
+Plug 'andymass/vim-matchup'
+
+" Accept .editorconfig
+Plug 'editorconfig/editorconfig-vim'
+
 " Miscellaneous Plugins
-" Deoplete Source
-Plug 'Shougo/neco-vim'
-" Multiuse- tab key
-" Plug 'ervandew/supertab'
+
 " Airline style status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 " Highlight and fix trailing whitespace
 Plug 'ntpeters/vim-better-whitespace'
+
 " Yank History Cycling on meta-[shift]-p
 Plug 'maxbrunsfeld/vim-yankstack'
+
 " Auto indent
 Plug 'yggdroot/indentline'
+
 " Python folding
 Plug 'tmhedberg/simpylfold'
+
 " Update folding less often
 Plug 'Konfekt/fastfold'
+
 " Use FZF for browsing vim buffers
 Plug 'junegunn/fzf.vim'
+
 " Markdown support
 Plug 'plasticboy/vim-markdown'
+
 " Window resizing c-w [<>-+=_|]
 Plug 'roxma/vim-window-resize-easy'
+
 " Regex highlighting and in buffer live replacement
 Plug 'markonm/traces.vim'
+
 " Better comments
 Plug 'scrooloose/nerdcommenter'
+
 " Work on brackets in pairs
 Plug 'jiangmiao/auto-pairs'
 
@@ -41,15 +54,13 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'junegunn/goyo.vim'
-
 " Compilers
 Plug 'xuhdev/singlecompile'
 
 " Autocomplete
-" Plug 'Shougo/deoplete.nvim'
-" Plug 'zchee/deoplete-jedi'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc-snippets'
+Plug 'honza/vim-snippets'
 
 " Coc extensions
 Plug 'Maxattax97/coc-ccls'
@@ -70,7 +81,12 @@ Plug 'udalov/kotlin-vim'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'pearofducks/ansible-vim'
 Plug 'justinmk/vim-syntax-extra'
-" Plug 'rhysd/vim-clang-format'
+" Rust
+Plug 'timonv/vim-cargo'
+Plug 'rust-lang/rust.vim'
+
+Plug 'cespare/vim-toml'
+
 
 " Git integration
 Plug 'airblade/vim-gitgutter'
@@ -83,6 +99,5 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 Plug 'majutsushi/tagbar'
-Plug 'rust-lang/rust.vim'
 
 call plug#end()

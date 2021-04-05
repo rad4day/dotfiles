@@ -49,6 +49,11 @@ colorscheme happy_hacking
 
 " Turn on the Wild menu
 set wildmenu
+set wildmode=list:longest
+
+
+"
+set updatetime=300
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
@@ -76,3 +81,8 @@ source ~/.vim/config/filetypes.vim
 
 " Transparency
 hi Normal guibg=NONE ctermbg=NONE
+
+" Prevent accidental writes to buffers that shouldn't be edited
+autocmd BufRead *.orig set readonly
+autocmd BufRead *.pacnew set readonly
+set nofoldenable
