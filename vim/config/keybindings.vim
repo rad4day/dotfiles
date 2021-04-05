@@ -50,6 +50,8 @@ cmap w!! w !sudo tee > /dev/null %
 " Toggle Case
 nmap <C-c> g~iw
 
+nmap <F2> :TagbarToggle<CR>
+
 " Rmarkdown
 autocmd Filetype rmd nmap <F5> :w\|:!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 autocmd Filetype rmd imap <F5> <ESC><ESC>:w\|:!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>

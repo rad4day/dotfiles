@@ -40,7 +40,7 @@ let g:NERDTrimTrailingWhitespace = 1
 
 
 " NerdTree
-let NERDTreeMinimalUI = 1
+let NERDTreeMinimalUI = 0
 let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1
 
@@ -63,17 +63,8 @@ let g:python_highlight_all = 1
 let g:SimpylFold_docstring_preview = 1
 
 
-" Supertab
-" let g:SuperTabDefaultCompletionType = "<c-space>"
-
-
 " Ale
 let g:ale_linters = {"python": ["flake8"], "python3": ["flake8"]}
-
-
-" UltiSnips
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " VIM-MARKDOWN
 let g:markdown_syntax_conceal=0
@@ -83,12 +74,6 @@ let g:vim_markdown_conceal = 0
 " Whitespace
 autocmd BufEnter *[^(.rmd|.snippets)] EnableStripWhitespaceOnSave
 autocmd BufEnter *.snippets DisableStripWhitespaceOnSave
-
-
-" Workspaces
-let g:workspace_session_name = '.vsession'
-let g:workspace_autosave = 0
-let g:workspace_autosave_untrailspaces = 0
 
 " Yankstack
 let g:yankstack_map_keys = 0
@@ -210,3 +195,6 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" Open Tagbar
+autocmd VimEnter * nested :call tagbar#autoopen(1)

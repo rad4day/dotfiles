@@ -43,12 +43,6 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'junegunn/goyo.vim'
 
-" Snippets
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
-" Plug 'bonsaiben/bootstrap-snippets'
-" Plug 'rbonvall/snipmate-snippets-bib'
-
 " Compilers
 Plug 'xuhdev/singlecompile'
 
