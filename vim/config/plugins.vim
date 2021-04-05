@@ -99,5 +99,6 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 Plug 'majutsushi/tagbar'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
