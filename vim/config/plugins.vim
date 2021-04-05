@@ -88,4 +88,7 @@ Plug 'mattn/gist-vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
+Plug 'majutsushi/tagbar'
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
